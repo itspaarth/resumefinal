@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paarth Khera's Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #000, #1a1a1a); /* Black gradient background */
+            color: #007BFF; /* Blue color */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1440px; /* Responsive width */
+            margin: 80px auto;
+            padding: 80px 40px;
+            background-color: transparent;
+        }
+
+        header, section {
+            transition: all 0.3s ease-in-out, transform 0.3s;
+            margin-bottom: 80px; /* Increased vertical space */
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        /* Fade In Animations */
+        header {
+            animation: fadeIn 1s forwards 0.5s;
+        }
+
+        #general-info {
+            animation: fadeIn 1s forwards 1s;
+        }
+
+        .skills {
+            animation: fadeIn 1s forwards 1.5s;
+        }
+
+        .hobbies {
+            animation: fadeIn 1s forwards 2s;
+        }
+
+        #contact {
+            animation: fadeIn 1s forwards 2.5s;
+        }
+
+        footer {
+            animation: fadeIn 1s forwards 3s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Other Styling & Effects */
+        header, section {
+            transition: transform 0.3s;
+        }
+
+        header:hover, section:hover {
+            transform: scale(1.05);
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.8em; /* Increased text size */
+        }
+
+        .profile-pic {
+            display: block;
+            margin: 30px auto 40px;
+            width: 220px; /* Increased image size */
+            border-radius: 50%;
+            box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.5); /* Changed shadow to blue */
+        }
+
+        section h2 {
+            text-align: center;
+            padding: 15px 0;
+            font-size: 2.5em; /* Increased text size */
+            margin-bottom: 30px;
+        }
+
+        section p, section li {
+            font-size: 1.6em; /* Increased text size */
+            margin-bottom: 20px; /* Added vertical space */
+        }
+
+        section ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px; /* Increased gap between items */
+            list-style-type: none;
+            text-align: center;
+        }
+
+        section li {
+            padding: 15px;
+            border: 2px solid #007BFF; /* Blue border */
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        section li:hover {
+            transform: scale(1.1);
+            background-color: #007BFF; /* Blue background */
+            color: #FFF; /* White text for contrast */
+        }
+
+        li img {
+            max-width: 80px; /* Increased image size */
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        .contact-info img {
+            max-width: 45px; /* Increased image size */
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+
+        a {
+            color: #007BFF; /* Blue color */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #e74c3c;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-image: linear-gradient(to right, #007BFF, #000); /* Blue to black gradient */
+            margin: 50px 0; /* Increased vertical space */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Paarth Khera</h1>
+            <p>Computer Science Student at JMIT Radaur</p>
+            <img src="C:\Users\paarthkhera\OneDrive\Documents\resume\man-with-glasses-tie-with-tie-it_745528-2818.avif" alt="Profile Picture" class="profile-pic">
+        </header>
+        <hr>
+
+        <section id="general-info">
+            <h2>ABOUT ME</h2>
+            <p>I am a 19 year old, from Karnal, Haryana. I Completed my schooling in 2022 from Pratap Public School, Karnal. I am now an ambitious CSE student in JMIT, Radaur with a solid foundation in C++ and adept knowledge of C, adept in collaborating with team projects and presenting findings to diverse audiences. Seeking an internship/entry-level position with a company to apply my academic knowledge and further develop my skills in a real-world setting.</p>
+        </section>
+        <hr>
+
+        <section class="skills">
+            <h2>SKILLS</h2>
+            <ul>
+                <li><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\695px-C_Programming_Language.svg.png" alt="C language">C language</li>
+                <li><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\ISO_C++_Logo.svg.png" alt="C++ language">C++ language</li>
+                <li><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\png-clipart-unity-logo-illustration-unity-game-engine-logo-video-game-corelle-brands-angle-text.png" alt="unity">Unity</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section class="hobbies">
+            <h2>HOBBIES</h2>
+            <ul>
+                <li><img src="https://w7.pngwing.com/pngs/142/76/png-transparent-white-and-orange-book-logo-symbol-yellow-orange-logo-ibooks-orange-logo-preview.png" alt="Reading">Reading</li>
+                <li><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\1000_F_247309323_wakJwFJ4Qe8xTPlDESofk9jlSHlisfle.jpg" alt="scribbling">Scribbling</li>
+                <li><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\63998402.jpg" alt="brainstorming">Brainstorming</li>
+                <li><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\130212176-functionality-testing-concept-icon-black-box-testing-idea-thin-line-illustration-setting-up-system.jpg" alt="testing new theories, codes, ideas etc.">Idea Implementations</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="contact">
+            <h2>CONTACT INFORMATION</h2>
+            <div class="contact-info" style="text-align:center;">
+                <p><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\7718904.png" alt="Email"> paarthkhera71@email.com</p>
+                <p><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\phone-call-icon-symbol-in-trendy-flat-style-call-icon-sign-for-app-logo-web-call-icon-flat-illustration-telephone-symbol-vector.jpg" alt="Phone"> +91-9729717249</p>
+                <p><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\69823-instagram-icons-symbol-youtube-computer-logo.jpeg" alt="instagram"> @its_paarth_</p>
+                <p><img src="C:\Users\paarthkhera\OneDrive\Documents\resume\174857.png" alt="linkedin"> @its_paarth</p>
+            </div>
+        </section>
+        <hr>
+
+        <footer style="text-align:center; font-size: 1.5em;">
+            <p>Thank you for visiting my resume!</p>
+        </footer>
+    </div>
+</body>
+
+</html>
